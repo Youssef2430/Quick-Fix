@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quick Fix</string>
+
+    <string-array name="roles">
+        <item>Choose your role</item>
+        <item>Customer</item>
+        <item>Employee</item>
+    </string-array>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70423684356",
+    "project_id": "quick-fix-b089b",
+    "storage_bucket": "quick-fix-b089b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70423684356:android:a0c4f0f246b1e6bb58dc51",
+        "android_client_info": {
+          "package_name": "com.example.quickfix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70423684356-j8747jtnnpluvpkpsj86olfs6vq4klv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGAgXUtIqN3gqxwW5yWm2tflmRmHqV8sQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70423684356-j8747jtnnpluvpkpsj86olfs6vq4klv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
