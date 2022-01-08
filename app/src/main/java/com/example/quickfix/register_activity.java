@@ -152,6 +152,7 @@ public class register_activity extends AppCompatActivity implements AdapterView.
                             });
                         }else{
                             Toast.makeText(register_activity.this, "Failed to register!", Toast.LENGTH_LONG).show();
+                            progressBar.setVisibility(View.INVISIBLE);
                         }
                     }
                 });

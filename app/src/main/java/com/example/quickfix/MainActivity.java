@@ -17,6 +17,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -26,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText Editemail, Editpassword;
 
     private FirebaseAuth mAuth;
+    private FirebaseUser user;
+    private DatabaseReference reference;
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Editemail = (EditText) findViewById(R.id.email);
         Editpassword = (EditText) findViewById(R.id.passwordsignin);
         progressbar = (ProgressBar) findViewById(R.id.progressBar2);
+
+
     }
 
     @Override
@@ -90,7 +101,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     //redirect to different activities depending on if it's an employee or customer
+                    user = FirebaseAuth.getInstance().getCurrentUser();
+                    reference = FirebaseDatabase.getInstance().getReference("Users");
+                    userID = user.getUid();
                     progressbar.setVisibility(View.INVISIBLE);
+                    startActivity(new Intent(MainActivity.this, EmployeeWelcomePage.class));
+
                 }else{
                     Toast.makeText(MainActivity.this, "Failed to login! Please check your credentials", Toast.LENGTH_LONG).show();
                 }

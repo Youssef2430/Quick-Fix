@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_branchlist.xml" value="0.12760416666666666" />
+        <entry key="app/src/main/res/layout/activity_branchlistchoice.xml" value="0.13949275362318841" />
+        <entry key="app/src/main/res/layout/activity_employee_welcome_page.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.13949275362318841" />
+        <entry key="app/src/main/res/layout/branchitem.xml" value="0.13949275362318841" />
+        <entry key="app/src/main/res/layout/branchitemadmin.xml" value="0.13405797101449277" />
+        <entry key="app/src/main/res/layout/employeeitem.xml" value="0.13405797101449277" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
